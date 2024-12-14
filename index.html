@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bindu G Gowda - Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/style.css">
+    <script>
+        function showSection(sectionId) {
+            // Highlight the selected section and scroll to it
+            const selectedSection = document.getElementById(sectionId);
+            if (selectedSection) {
+                selectedSection.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+    </script>
+</head>
+<body>
+
+<header class="d-flex align-items-center bg-light p-3">
+    <img src="C:\Users\BGGOWDA\OneDrive - Capgemini\Desktop\portfolio\Bindu.jpg" alt="Bindu G Gowda" class="rounded-circle" style="width: 150px; height: 150px; margin-right: 20px;">
+    <div>
+        <h1>Bindu G Gowda</h1>
+        <p>Cloud Engineer | AWS | Terraform | CI/CD | ELK Stack</p>
+    </div>
+</header>
+
+<div class="container-fluid">
+    <div class="row">
+        <!-- Navigation -->
+        <nav class="col-md-3 bg-light p-4">
+            <ul class="list-unstyled">
+                <li><button class="btn btn-primary w-100 mb-3" onclick="showSection('summary');"><i class="fas fa-user"></i> Summary</button></li>
+                <li><button class="btn btn-primary w-100 mb-3" onclick="showSection('work-experience');"><i class="fas fa-briefcase"></i> Work Experience</button></li>
+                <li><button class="btn btn-primary w-100 mb-3" onclick="showSection('education');"><i class="fas fa-graduation-cap"></i> Education</button></li>
+                <li><button class="btn btn-primary w-100 mb-3" onclick="showSection('technical-skills');"><i class="fas fa-tools"></i> Technical Skills</button></li>
+                <li><button class="btn btn-primary w-100" onclick="showSection('contact');"><i class="fas fa-envelope"></i> Contact</button></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="col-md-9 p-4">
+            <section id="summary">
+                <h2><i class="fas fa-user"></i> Summary</h2>
+                <p>Cloud Engineer with expertise in AWS, Terraform, CI/CD, and ELK Stack for cloud infrastructure management and automation. Skilled in deploying scalable features, optimizing system requirements, and quickly adapting to new technologies to meet evolving business needs. Proficient in automating cloud operations to enhance efficiency and streamline deployment processes.</p>
+            </section>
+
+            <section id="work-experience">
+                <h2><i class="fas fa-briefcase"></i> Work Experience</h2>
+                <h3><i class="fas fa-cloud"></i> Cloud Engineer, Capgemini Technology & Services (Jun 2023 - Present)</h3>
+                <ul>
+                    <li>Managed deployments across cloud and physical servers, ensuring seamless operation and high availability.</li>
+                    <li>Developed Terraform configuration files to automate provisioning of AWS EC2 instances, S3 buckets, VPCs, and IAM roles, ensuring infrastructure as code (IAC) best practices.</li>
+                    <li>Streamlined deployment processes using Git and Jenkins, enhancing efficiency and reducing release cycles.</li>
+                    <li>Implemented ELK Stack for real-time log monitoring and analysis, and created Kibana dashboards for actionable insights.</li>
+                    <li>Enhanced log monitoring by installing Filebeat on multiple servers and setting up custom Logstash pipelines to process and analyze data more effectively.</li>
+                </ul>
+
+                <h3><i class="fas fa-code"></i> Associate Software Engineer, Capgemini Technology & Services (Jul 2022 - May 2023)</h3>
+                <ul>
+                    <li>Performed API testing, including configuring environments, preparing data, and managing dependencies.</li>
+                    <li>Conducted thorough testing of HTTP methods, response payloads, and headers, reducing error rates by 30% and enhancing response accuracy by 20%.</li>
+                    <li>Ensured secure authentication and authorization mechanisms through meticulous testing.</li>
+                </ul>
+
+                <h3><i class="fas fa-laptop-code"></i> Software Developer Intern, Capgemini Technology & Services (Jan 2022 - Apr 2022)</h3>
+                <ul>
+                    <li>Created scalable microservices using Spring Boot for web applications.</li>
+                    <li>Managed databases with PostgreSQL/H2.</li>
+                </ul>
+            </section>
+
+            <section id="education">
+                <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+                <p>Bachelor's Degree in Computer Science and Engineering (B.Tech)</p>
+                <p>Presidency University, Bengaluru (Aug 2018 - Jun 2022)</p>
+                <p><strong>CGPA:</strong> 8.19</p>
+            </section>
+
+            <section id="technical-skills">
+                <h2><i class="fas fa-tools"></i> Technical Skills</h2>
+                <ul>
+                    <li><strong>Cloud Platforms:</strong> AWS</li>
+                    <li><strong>Operating Systems:</strong> Linux, Ubuntu, Windows</li>
+                    <li><strong>Virtualization:</strong> VMware</li>
+                    <li><strong>CI/CD Tools:</strong> Jenkins</li>
+                    <li><strong>IAC Tools:</strong> Terraform</li>
+                    <li><strong>Containerization:</strong> Docker</li>
+                    <li><strong>Languages:</strong> Python</li>
+                    <li><strong>Version Control:</strong> Git</li>
+                    <li><strong>Monitoring Tools:</strong> ELK Stack</li>
+                    <li><strong>Database:</strong> MySQL</li>
+                    <li><strong>Ticketing Tool:</strong> ServiceNow</li>
+                    <li><strong>Agile:</strong> Jira</li>
+                </ul>
+            </section>
+
+            <section id="contact">
+                <h2><i class="fas fa-envelope"></i> Contact</h2>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:binduggowda0103@gmail.com">binduggowda0103@gmail.com</a></p>
+                    <p><i class="fas fa-phone"></i> Phone: 9019232455</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Location: Bengaluru, India</p>
+                    <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/bindu-g-gowda-935744210" target="_blank">linkedin.com/in/bindu-g-gowda-935744210</a></p>
+                    <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/BinduGGowda?tab=repositories" target="_blank">github.com/BinduGGowda</a></p>
+                </div>
+            </section>
+        </main>
+    </div>
+</div>
+
+<footer class="text-center py-3 bg-dark text-white">
+    <p>&copy; 2024 Bindu G Gowda. All rights reserved.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
